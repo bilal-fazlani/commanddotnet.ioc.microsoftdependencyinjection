@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CommandDotNet" Version="0.5.14-alpha" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Tests\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Tests\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Tests\**" />
+  </ItemGroup>
+</Project>
