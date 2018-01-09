@@ -13,11 +13,11 @@ dotnet_csproj:
   file_version: '{version}'
   informational_version: '{version}'
 build_script:
-- cmd: dotnet pack -o output -c Release --include-symbols --include-source CommandDotNet.IoC.MicrosoftDependencyInjection/CommandDotNet.IoC.MicrosoftDependencyInjection.csproj /p:Version=%APPVEYOR_BUILD_VERSION%
+- cmd: dotnet pack -o output -c Release --include-symbols --include-source CommandDotNet.IoC.MicrosoftDependencyInjection.csproj /p:Version=%APPVEYOR_BUILD_VERSION%
 test_script:
 - cmd: dotnet test Tests/Tests.csproj
 artifacts:
-- path: CommandDotNet.IoC.MicrosoftDependencyInjection/output/**
+- path: output/**
   name: Nuget
 deploy:
 - provider: NuGet
