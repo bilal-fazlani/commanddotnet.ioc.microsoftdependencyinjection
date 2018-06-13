@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <LangVersion>7.1</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.2</LangVersion>
     <Authors>Bilal Fazlani</Authors>
     <NeutralLanguage>en-US</NeutralLanguage>
     <AssemblyTitle>CommandDotNet.IoC.MicrosoftDependencyInjection</AssemblyTitle>
@@ -10,12 +10,11 @@
     <PackageProjectUrl>https://github.com/bilal-fazlani/commanddotnet.ioc.microsoftdependencyinjection</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/bilal-fazlani/commanddotnet.ioc.microsoftdependencyinjection</RepositoryUrl>
-    <NetStandardImplicitPackageVersion>2.0.1</NetStandardImplicitPackageVersion>
     <PackageIconUrl>https://raw.githubusercontent.com/bilal-fazlani/CommandDotNet/master/images/nuget-icon.png</PackageIconUrl>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CommandDotNet" Version="1.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+    <PackageReference Include="CommandDotNet" Version="2.6.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Tests\**" />

@@ -1,5 +1,6 @@
 using System;
 using CommandDotNet;
+using CommandDotNet.Attributes;
 using CommandDotNet.IoC.MicrosoftDependencyInjection;
 using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +26,7 @@ namespace Tests
     
     public class ServiceApp
     {
+        [InjectProperty]
         public IService Service { get; set; }
 
         public int Process()
