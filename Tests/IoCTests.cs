@@ -11,7 +11,7 @@ namespace Tests
     public class IoCTests
     {
         [Fact]
-        public void CanMicrosfotInjectService()
+        public void CanMicrosoftInjectService()
         {
             IServiceCollection serviceCollection = new ServiceCollection();
             serviceCollection.AddSingleton<IService, Service>();
